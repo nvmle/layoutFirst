@@ -45,16 +45,25 @@ header {
 
 /* SECTION PROMO */
 
+#promo {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  /* align-items: center; */
+}
+
 .promo-food-app {
   margin: 0;
   padding: 0;
   display: flex;
   /* flex-wrap: wrap; */
-  background-image: url(/img/promo_bg.jpg);
+  background-image: url(/img/promo_bg.png);
   height: 619px;
+  width: 100%;
   background-size: cover;
   flex-direction: column;
-  justify-self: start;
+  /* justify-self: center; */
 }
 
 .promo-description {
@@ -80,7 +89,7 @@ header {
   font-size: 24px;
   line-height: 36px;
   color: #f6f6f6;
-  width: 100%;
+  /* width: 1440px; */
   /* align-self: start; */
 }
 
@@ -116,14 +125,16 @@ h4 {
 
 .button-stores {
   display: flex;
-  margin: 0;
+  margin: 0 auto;
+  /* margin-top: 0;
+  margin-bottom: 0; */
   padding: 0;
-  /* justify-content: center; */
+  justify-content: center;
   /* align-items: center; */
 }
 
 .button {
-  display: block;
+  /* display: block; */
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -134,7 +145,175 @@ h4 {
   background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
   margin-left: 34px;
-  border-radius: 34px;
+  border-radius: 30px;
   border: 1px solid white;
 }
+
+.promo-phones {
+  position: relative;
+  top: -286px;
+  left: -50px;
+  margin: 0 auto;
+  padding: 0;
+  /* display: block; */
+  /* margin: auto; */
+  /* height: 603px; */
+  /* justify-content: center; */
+  /* align-self: center; */
+}
+
+/* .promo-phones {
+  width: 548px;
+  height: 640px;
+} */
 /* SECTION PROMO */
+
+/* SECTION WORKS */
+
+#works {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.works-title {
+  display: block;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 59px;
+  /* width: 100%; */
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.works-example {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  flex-wrap: nowrap;
+  height: 807px;
+}
+
+.works-img {
+  height: 100%;
+}
+
+.works-text {
+  align-items: space-between;
+  height: 280px;
+}
+
+h2 {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+  color: #252b42;
+  margin: 0;
+  padding: 10px 0;
+  /* margin-bottom: 7px; */
+}
+
+.h2-works {
+  margin-bottom: 7px;
+}
+
+h3 {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fa4a0c;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.h4-works {
+  display: block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #737373;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.varieties {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* SECTOIN WORKS */
+
+/* SECTIN DOWNLOAD */
+
+#download {
+  height: 509px;
+  background-image: url(/img/download_bg.jpg);
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-text {
+  color: #ffffff;
+}
+
+.h2-download {
+  margin-bottom: 10px;
+}
+.h4-download {
+  padding: 10px 0;
+  margin: 0;
+  margin-bottom: 60px;
+}
+
+.download_button-stores {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+}
+
+.download_button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  height: 60px;
+  /* width: 236px; */
+  background-color: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  margin-left: 16px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.button-orange {
+  background-color: #fa4a0c;
+  border-color: #fa4a0c;
+}
+
+.download_button-playstore {
+  padding: 0 31px;
+}
+
+.download_button-appstore {
+  padding: 0 45px;
+}
+/* SECTIN DOWNLOAD */
