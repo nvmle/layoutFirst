@@ -317,3 +317,25 @@ h3 {
   padding: 0 45px;
 }
 /* SECTIN DOWNLOAD */
+
+/* SECTION FOOTER */
+
+#footer {
+  height: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social-icon {
+  margin-left: 28.5px;
+}
+
+.footer-copyright {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #5c5c5c;
+}
+/* SECTION FOOTER */
