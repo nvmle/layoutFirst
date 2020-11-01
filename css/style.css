@@ -2,12 +2,14 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 * {
+  /* width: 100%; */
   max-width: 1440px;
   margin: auto;
 }
 
 /* HEADER */
 header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,20 +52,17 @@ header {
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
-  /* align-items: center; */
 }
 
 .promo-food-app {
   margin: 0;
   padding: 0;
   display: flex;
-  /* flex-wrap: wrap; */
   background-image: url(/img/promo_bg.png);
   height: 619px;
   width: 100%;
   background-size: cover;
   flex-direction: column;
-  /* justify-self: center; */
 }
 
 .promo-description {
@@ -79,7 +78,7 @@ header {
   justify-content: flex-start;
 }
 
-.subtitle-food-app {
+.promo-heading {
   margin: 0;
   margin-bottom: 7px;
   /* padding: 7px; */
@@ -115,7 +114,7 @@ h4 {
   line-height: 38px;
   color: #f6f6f6;
 }
-.promo-download {
+.promo-subtitle {
   margin: 0;
   padding-top: 10px;
   padding-left: 89px;
@@ -123,30 +122,41 @@ h4 {
   padding-bottom: 48px;
 }
 
-.button-stores {
+.promo-buttons {
   display: flex;
   margin: 0 auto;
-  /* margin-top: 0;
-  margin-bottom: 0; */
+  margin-left: 521px;
   padding: 0;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .button {
-  /* display: block; */
+  height: 68px;
+  width: 236px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-left: 34px;
+  border-radius: 30px;
+  border: 1px solid white;
+}
+
+.promo-primary-button {
+  background-color: #fa4a0c;
+  border-color: #fa4a0c;
+  margin-left: 0;
+}
+
+.promo-link {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
-  height: 68px;
-  width: 236px;
-  background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
-  margin-left: 34px;
-  border-radius: 30px;
-  border: 1px solid white;
+  text-decoration: none;
+}
+
+.promo-img {
+  height: 611px;
 }
 
 .promo-phones {
@@ -155,17 +165,8 @@ h4 {
   left: -50px;
   margin: 0 auto;
   padding: 0;
-  /* display: block; */
-  /* margin: auto; */
-  /* height: 603px; */
-  /* justify-content: center; */
-  /* align-self: center; */
 }
 
-/* .promo-phones {
-  width: 548px;
-  height: 640px;
-} */
 /* SECTION PROMO */
 
 /* SECTION WORKS */
@@ -173,15 +174,32 @@ h4 {
 #works {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   flex-wrap: wrap;
   flex-direction: column;
+}
+
+.works-wrapper {
+  margin: 0 auto;
+  margin-left: 245px;
+  /* width: 1041px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-line {
+  height: 0;
+  width: 884px;
+  color: #e4e4e4;
+  /* border: none; */
+  border: 2px solid #e4e4e4;
 }
 
 .works-title {
   display: block;
   margin: auto;
   padding: 0;
+  margin-top: 72px;
   margin-bottom: 59px;
   /* width: 100%; */
   font-family: Poppins;
@@ -190,23 +208,41 @@ h4 {
   font-size: 44px;
   line-height: 36px;
   color: #000000;
+  opacity: 0.8;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .works-example {
+  /* display: block; */
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
   /* flex-direction: row; */
   flex-wrap: nowrap;
   height: 807px;
+  width: 100%;
 }
 
 .works-img {
+  /* display: flex; */
   height: 100%;
+  width: 40%;
+  /* justify-content: start; */
+}
+
+.works-img-size {
+  height: 100%;
+  float: left;
+  /* margin-left: -100px; */
 }
 
 .works-text {
-  align-items: space-between;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: space-between; */
+  /* justify-content: flex-end; */
   height: 280px;
+  /* float: right; */
 }
 
 h2 {
@@ -263,79 +299,113 @@ h3 {
   height: 509px;
   background-image: url(/img/download_bg.jpg);
   display: flex;
-  /* flex-wrap: wrap; */
+  /* flex-direction: column;
+  align-items: center; */
+  /* justify-content: center; */
+}
+
+.downloads-wrapper {
+  /* display: block; */
+  margin: 130px auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .download-text {
   color: #ffffff;
 }
 
-.h2-download {
+/* .h2-download {
   margin-bottom: 10px;
-}
+} */
 .h4-download {
-  padding: 10px 0;
+  padding: 10px 10px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
-.download_button-stores {
+.download-buttons {
   display: flex;
   margin: 0 auto;
   padding: 0;
   justify-content: center;
 }
 
-.download_button {
+/* .download_button {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  border: 1px solid white;
+} */
+
+.download-link {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 28px;
-  height: 60px;
-  /* width: 236px; */
-  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
   color: #ffffff;
-  margin-left: 16px;
+}
+
+.download-primary-button {
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  border: 1px solid #fa4a0c;
+  height: 64px;
+  padding: 0 31px;
+  background-color: #fa4a0c;
+}
+
+.download-secondary-button {
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 10px;
   border: 1px solid white;
-}
-
-.button-orange {
-  background-color: #fa4a0c;
-  border-color: #fa4a0c;
-}
-
-.download_button-playstore {
-  padding: 0 31px;
-}
-
-.download_button-appstore {
+  height: 60px;
   padding: 0 45px;
+  margin-left: 16px;
 }
 /* SECTIN DOWNLOAD */
 
 /* SECTION FOOTER */
 
 #footer {
-  height: 218px;
+  /* height: 218px; */
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* margin: 0 115px; */
+  margin-top: 38px;
+  margin-bottom: 53px;
+  width: 1210px;
+}
+
+.social {
+  margin-right: 274px;
+}
+
 .social-icon {
   margin-left: 28.5px;
 }
 
-.footer-copyright {
+.copyright-wrapper {
+  margin: auto 0;
+}
+
+.copyright-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 18px;
   color: #5c5c5c;
+  margin-right: 45px;
 }
 /* SECTION FOOTER */
